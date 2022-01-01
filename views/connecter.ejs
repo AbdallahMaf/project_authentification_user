@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Connecter</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <h1>CONNECTEZ-VOUS A VOTRE COMPTE</h1>
+        <% if (messages) { %>
+            <p>
+                <%= messages.error %>
+            </p>
+            <% } %>
+                <form action="/connecter" method="POST">
+                    <input type="email" name="email" placeholder="Adresse mail" />
+                    <input type="password" name="password" placeholder="Mot de passe" />
+                    <a href="http://localhost:3000/forgetpassword"><label class="passwordForget"><strong>Mot de Passe oublié ?</strong></label></a>
+                    <button>SE CONNECTER</button>
+                    <label><strong><a class="page" href="http://localhost:3000/inscrire">Pas de compte? Inscrivez-vous
+                                ici</a></strong></label>
+                </form>
+    </div>
+
+</body>
+
+</html>

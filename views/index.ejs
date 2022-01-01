@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleUser.css">
+    <title>User</title>
+</head>
+
+<body>
+    <!-- <h1 class="welcome">Bienvenue <%= name%></h1>
+    <form action="/logout?_method=DELETE" method="POST">
+        <button type="submit" class="deconnect">DECONNECTER</button>
+    </form> -->
+    <h2>BIENVENUE DANS NOTRE SITE</h2>
+    <div class="action">
+        <div class="profile" onclick="menuToggle();">
+            <img src="profile1.png">
+        </div>
+        <div class="menu">
+            <h3>
+                <%= name%><br><span>Utilisateur</span>
+            </h3>
+
+            <ul>
+                <li><img src="userprofile.png"><a href="#">Mon Profil</a></li>
+                <li><img src="edit.png"><a href="#">Modifier Profil</a></li>
+                <li><img src="inbox.png"><a href="#">Messages</a></li>
+                <li><img src="setting.png"><a href="#">Reglages</a></li>
+                <form action="/logout?_method=DELETE" method="POST">
+                    <li><button type="submit"><img src="logout.png">Deconnexion</button></li>
+                </form>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

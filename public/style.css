@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(blue, gray);
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family:'Poppins', sans-serif;
+}
+label.passwordForget{
+    float: right;
+    color: blue;
+    margin-top: 5px;
+    cursor: pointer;
+}
+a.page{
+    text-decoration: none;
+    color: blue;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.main{
+    width: 600px;
+    max-width: 90%;
+    text-align: center;
+    background-color: white;
+    padding: 25px 20px;
+    border-radius: 10px;
+}
+.main > h1{
+    font-size: 30px;
+    color: blue;
+    margin: 0 0 30px 0;
+}
+.main > form > input{
+    width: 100%;
+    padding: 15px;
+    background-color: #ccc;
+    color: gray;
+    border: 0;
+    margin: 10px 5px;
+    border-radius: 8px;
+}
+.main > form > button{
+    width: 96%;
+    padding: 13px;
+    background-color: blue;
+    color: white;
+    font-family:'Poppins', sans-serif;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.main > form > input:focus,
+.main > form > button:focus{
+    outline: none;
+}
